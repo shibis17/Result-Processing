@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Result Processing System </title>
+        <style>
+            .loader {
+                border: 16px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 16px solid #3498db;
+                width: 80px;
+                height: 80px;
+                animation: spin 2s linear infinite;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 18%;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            .after{
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 45%;
+                margin-left: -100px;
+                margin-top: -100px;
+                padding: 30px 10px 10px 10px;
+                border: 5px solid yellow;
+                width: 320px;
+                height: 220px;
+                animation: color-me-in 1s infinite;
+                text-align: center;
+            }
+            @keyframes color-me-in{
+                0%{
+                    border: 5px solid red;
+                }
+                50%{
+                    border: 5px solid green;
+                }
+                100%{
+                    border: 5px solid blue;
+                }
+            }
+
+            header{
+                width: 100%;
+                position: fixed;
+                padding: 10px 0;
+                background: blue;
+                color: #fff;
+                text-align: center;
+            }
+        </style>
+        <link rel="stylesheet" href="bootstrap.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var display = setTimeout(showPage, 3000);
+            });
+            function showPage()
+            {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("after").style.display = "block";
+            }
+
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="loader" id="loader"></div>
+        <div style="display:none;" id="after">
+            <header><h2><b>Result Processing System</b></h2></header>
+            <div class="after">
+                <form action="staff.html">
+                    <button> Staff Section </button>
+                </form>
+                <br/><br/>
+                <form action="result.html">
+                    <button> Students Result Analysis </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

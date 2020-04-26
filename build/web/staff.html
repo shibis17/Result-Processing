@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Result Processing System </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css">
+        <style>
+            header{
+                width: 100%;
+                position: fixed;
+                padding: 10px 0;
+                background: blue;
+                color: #fff;
+                text-align: center;
+            }
+            .after{
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 45%;
+                margin-left: -100px;
+                margin-top: -100px;
+                padding: 30px 10px 10px 10px;
+                border: 5px solid yellow;
+                width: 320px;
+                height: 220px;
+                animation: color-me-in 1s infinite;
+                text-align: center;
+            }
+            @keyframes color-me-in{
+                0%{
+                    border: 5px solid red;
+                }
+                50%{
+                    border: 5px solid green;
+                }
+                100%{
+                    border: 5px solid blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header><h2><b>Result Processing System</b></h2></header>
+        <div class="after">
+            <form action="addstudent.html">
+                <button>Add Student</button>
+            </form>
+            <br/>
+            <form action="rollno_student.jsp">
+                <button>Modify Student</button>
+            </form>
+            <br/>
+            <form action="rollno_delete.jsp">
+                <button>Delete Student</button>
+            </form>
+            <br/>
+        </div>
+    </body>
+</html>

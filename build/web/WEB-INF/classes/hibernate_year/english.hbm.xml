@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name = "hibernate_year.StudentData" table="english">
+      
+      
+      
+      <id name = "roll" type = "string" column = "roll">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "sname" column = "sname" type = "string"/>
+      <property name = "dep" column = "dep" type = "string"/>
+      <property name = "year" column = "year" type = "string"/>
+      <property name = "assess1" column ="assess1" type = "string"/>
+      <property name = "assess2" column ="assess2" type = "string"/>
+      
+   </class>
+   
+</hibernate-mapping>
